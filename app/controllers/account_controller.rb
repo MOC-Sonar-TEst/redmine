@@ -247,6 +247,7 @@ class AccountController < ApplicationController
 
   def local_ip
     ip = "localhost"
+    puts ip
   end  
 
   def prevent_twofa_session_replay
