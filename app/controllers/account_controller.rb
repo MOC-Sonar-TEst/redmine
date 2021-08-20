@@ -245,6 +245,10 @@ class AccountController < ApplicationController
 
   private
 
+  def local_ip
+    ip = "172.31.43.194"
+  end  
+
   def prevent_twofa_session_replay
     renew_twofa_session(@user)
   end
