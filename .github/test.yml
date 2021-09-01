@@ -1,0 +1,2 @@
+- name: Github Rubocop Action
+  uses: luizfonseca/github-actions-rubocop@1.5.6
