@@ -51,4 +51,4 @@ jobs:
             
     - name: Git commit
       run: bash -c "git config --global user.email 'pavlo.khavronenko@masterofcode.com' &&
-  git config --global user.name 'Pavlo KH' && git commit -m 'Update Rubocop-Json' && git push"
+           git config --global user.name 'Pavlo KH' && git commit -m 'Update Rubocop-Json' && git push"
