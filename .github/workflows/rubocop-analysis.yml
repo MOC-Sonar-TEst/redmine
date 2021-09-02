@@ -50,5 +50,5 @@ jobs:
       run:  bash -c "bundle exec rubocop --format json --out rubocop-report.json"
             
     - name: Git commit
-      run: bash -c "git config --global user.email pavlo.khavronenko@masterofcode.com &&
-  git config --global user.name Pavlo && git commit -m 'Update Rubocop-Json' && git push"
+      run: bash -c "git config --global user.email 'pavlo.khavronenko@masterofcode.com' &&
+  git config --global user.name 'Pavlo KH' && git commit -m 'Update Rubocop-Json' && git push"
