@@ -45,3 +45,9 @@ jobs:
       uses: github/codeql-action/upload-sarif@v1
       with:
         sarif_file: rubocop.sarif
+    
+    - name: Generate file for Sonar
+      run:  rubocop --format json --out rubocop-report.json
+      
+    - name: Git commit
+      run: bash -c "git commit -m 'Update Rubocop-Json' && git push"
